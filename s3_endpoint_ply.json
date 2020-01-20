@@ -1,0 +1,16 @@
+{
+  "Statement": [
+    {
+      "Sid": "AmazonLinux2AMIRepositoryAccess",
+      "Principal": "*",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "arn:aws:s3:::amazonlinux.*.amazonaws.com/*"
+        "arn:aws:s3:::repo.*.amazonaws.com/*"
+      ]
+    }
+  ]
+}
